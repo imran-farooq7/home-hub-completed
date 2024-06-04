@@ -1,4 +1,5 @@
 import { allPosts } from "@/.contentlayer/generated";
+import PostCard from "@/components/PostCard";
 export default function HomePage() {
 	return (
 		<>
@@ -12,6 +13,15 @@ export default function HomePage() {
 					design, and more, collected in chronological order.
 				</p>
 			</header>
+			<div className="mt-16 sm:mt-20">
+				<div className="md:border-l-2 md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+					<div className="flex max-w-3xl flex-col mb-16 space-y-16">
+						{allPosts.map((post) => (
+							<PostCard key={post._id} post={post} />
+						))}
+					</div>
+				</div>
+			</div>
 		</>
 	);
 }
