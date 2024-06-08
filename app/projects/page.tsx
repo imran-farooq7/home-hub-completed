@@ -23,7 +23,7 @@ const ProjectsPage = () => {
 							key={project.name}
 							className="relative group flex flex-col items-start"
 						>
-							<div className="relative h-12 z-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/50 ring-1 ring-zinc-900/5 dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+							<div className="relative h-12 w-12 z-10 flex items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/50 ring-1 ring-zinc-900/5 dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
 								<project.icon />
 							</div>
 							<h2 className="mt-6 font-semibold text-base tracking-tight text-zinc-800 dark:text-zinc-100">
